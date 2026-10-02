@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>10-Item Quiz</title>
+
+</head>
+
+<!--Content-->
+
+<body style="font-family: 'Poppins', sans-serif; line-height:1.8; max-width:900px;
+margin:40px auto; background-color:#f4f4f4; text-align:center; padding:0 20px;">
+
+<h1 style="color:#1a5276;">Web Development Quiz</h1>
+
+<!--HTML Form-->
+
+<form style="background-color:white; padding:20px; border-radius:8px; max-width:600px; margin:0 auto;
+ text-align:center;" onsubmit="return checkAnswers()">
+
+<!--Student Information Section-->
+<h2 style="color:#216894; margin-bottom:5px;">Student Information</h2>
+<b style="color:#216894;">Name:  </b><input type="text" id="studentName" style="width:60%; padding:8px;" required>
+ <br>
+ <br>
+ <hr>
+
+<!--10 QUESTIONS, 4 CHOICES EACH, RADIO BUTTONS START-->
+
+    <h3 style="color:#3498db;">1. What is the main purpose of HTML in a webpage?</h3>
+    <input type="radio" name="q1" id="q1a" value="A" required> A. To structure and organize the content<br>
+    <input type="radio" name="q1" id="q1b" value="B"> B. To style the page's colors and layout<br>
+    <input type="radio" name="q1" id="q1c" value="C"> C. To handle server-side database operations<br>
+    <input type="radio" name="q1" id="q1d" value="D"> D. To compress images for faster loading<br>
+
+	<br>
+	<hr>
+
+    <h3 style="color:#3498db;">2. What is the purpose of CSS in web development?</h3>
+    <input type="radio" name="q2" id="q2a" value="A"> A. To define the page's content and structure<br>
+    <input type="radio" name="q2" id="q2b" value="B" required> B. To control the visual presentation and styling<br>
+    <input type="radio" name="q2" id="q2c" value="C"> C. To validate form inputs<br>
+    <input type="radio" name="q2" id="q2d" value="D"> D. To store user data permanently<br>
+
+	<br>
+	<hr>
+
+    <h3 style="color:#3498db;">3. Why is JavaScript used on a webpage?</h3>
+    <input type="radio" name="q3" id="q3a" value="A"> A. To define the page's basic text structure<br>
+    <input type="radio" name="q3" id="q3b" value="B"> B. To set the page's font colors only<br>
+    <input type="radio" name="q3" id="q3c" value="C" required> C. To make the page interactive and dynamic<br>
+    <input type="radio" name="q3" id="q3d" value="D"> D. To create the database schema<br>
+
+	<br>
+    <hr>
+
+    <h3 style="color:#3498db;">4. What is the purpose of a form in a webpage?</h3>
+    <input type="radio" name="q4" id="q4a" value="A"> A. To decorate the page with animations<br>
+    <input type="radio" name="q4" id="q4b" value="B"> B. To link to other websites<br>
+    <input type="radio" name="q4" id="q4c" value="C"> C. To display images only<br>
+    <input type="radio" name="q4" id="q4d" value="D" required> D. To collect input or data from the user<br>
+
+	<br>
+    <hr>
+
+    <h3 style="color:#3498db;">5. Why do radio buttons only allow one selection per group?</h3>
+    <input type="radio" name="q5" id="q5a" value="A" required> A. Because they are designed for mutually exclusive choices<br>
+    <input type="radio" name="q5" id="q5b" value="B"> B. Because of a browser limitation with no real purpose<br>
+    <input type="radio" name="q5" id="q5c" value="C"> C. Because they can only hold text values<br>
+    <input type="radio" name="q5" id="q5d" value="D"> D. Because they require JavaScript to function at all<br>
+
+	<br>
+    <hr>
+
+    <h3 style="color:#3498db;">6. What is the benefit of using checkboxes instead of radio buttons?</h3>
+    <input type="radio" name="q6" id="q6a" value="A"> A. Checkboxes load faster than radio buttons<br>
+    <input type="radio" name="q6" id="q6b" value="B" required> B. Checkboxes allow the user to select multiple options<br>
+    <input type="radio" name="q6" id="q6c" value="C"> C. Checkboxes can only be used once per page<br>
+    <input type="radio" name="q6" id="q6d" value="D"> D. Checkboxes automatically validate email addresses<br>
+
+	<br>
+    <hr>
+
+    <h3 style="color:#3498db;">7. Why is field validation (such as "required") important in a form?</h3>
+    <input type="radio" name="q7" id="q7a" value="A"> A. It makes the form look more colorful<br>
+    <input type="radio" name="q7" id="q7b" value="B"> B. It automatically submits the form faster<br>
+    <input type="radio" name="q7" id="q7c" value="C" required> C. It prevents users from submitting incomplete or incorrect data<br>
+    <input type="radio" name="q7" id="q7d" value="D"> D. It changes the font size of the input<br>
+
+	<br>
+    <hr>
+
+    <h3 style="color:#3498db;">8. What is the main role of JavaScript's if/else statement?</h3>
+    <input type="radio" name="q8" id="q8a" value="A"> A. To style HTML elements with colors<br>
+    <input type="radio" name="q8" id="q8b" value="B"> B. To create a new HTML page<br>
+    <input type="radio" name="q8" id="q8c" value="C"> C. To permanently delete form data<br>
+    <input type="radio" name="q8" id="q8d" value="D" required> D. To make a decision and run different code depending on a condition<br>
+
+	<br>
+	<hr>
+
+    <h3 style="color:#3498db;">9. Why would a developer use a dropdown/select menu instead of individual radio buttons?</h3>
+    <input type="radio" name="q9" id="q9a" value="A" required> A. To save space when there are many options<br>
+    <input type="radio" name="q9" id="q9b" value="B"> B. Because dropdowns allow multiple selections only<br>
+    <input type="radio" name="q9" id="q9c" value="C"> C. Because radio buttons cannot have more than 2 options<br>
+    <input type="radio" name="q9" id="q9d" value="D"> D. Dropdowns are required for every form by law<br>
+
+	<br>
+    <hr>
+
+    <h3 style="color:#3498db;">10. Why is it useful for a function to calculate and display a result automatically?</h3>
+    <input type="radio" name="q10" id="q10a" value="A"> A. It removes the need for an HTML form entirely<br>
+    <input type="radio" name="q10" id="q10b" value="B" required> B. It saves the user from doing the calculation manually and reduces errors<br>
+    <input type="radio" name="q10" id="q10c" value="C"> C. It makes the webpage load slower<br>
+    <input type="radio" name="q10" id="q10d" value="D"> D. It is only useful for games, not real forms<br>
+
+	<br>
+	<hr>
+
+	<br>
+	<br>
+
+<input type="submit" value="Check Answers" style="background-color:#2980b9; color:white; padding:10px 15px; border:none; border-radius:4px; width:49%; cursor:pointer;">
+
+<input type="reset" value="Retake Quiz" onclick="document.getElementById('result').innerHTML=''" style="background-color:#95a5a6; color:white; padding:10px 15px; border:none; border-radius:4px; width:49%; cursor:pointer;">
+
+</form>
+
+<!-- display result after completing the quiz form-->
+<div id="result" style="max-width:600px; margin:20px auto;"></div>
+
+<script>
+
+function checkAnswers()
+{
+
+//get Student Name
+var studentName = document.getElementById("studentName").value;
+
+// start Score at 0
+var score = 0;
+
+// Check Name has no numbers, using isNaN() to test each character
+for (var i = 0; i < studentName.length; i++) {
+    if (!isNaN(studentName.charAt(i)) && studentName.charAt(i) !== " ")
+    {
+        alert("Student Name must not contain numbers");
+        return false;
+    }
+}
+
+// Question 1: correct answer is A
+if (document.getElementById("q1a").checked)
+{
+    score = score + 1;
+}
+
+// Question 2: correct answer is B
+if (document.getElementById("q2b").checked)
+{
+    score = score + 1;
+}
+
+// Question 3: correct answer is C
+if (document.getElementById("q3c").checked)
+{
+    score = score + 1;
+}
+
+// Question 4: correct answer is D
+if (document.getElementById("q4d").checked)
+{
+    score = score + 1;
+}
+
+// Question 5: correct answer is A
+if (document.getElementById("q5a").checked)
+{
+    score = score + 1;
+}
+
+// Question 6: correct answer is B
+if (document.getElementById("q6b").checked)
+{
+    score = score + 1;
+}
+
+// Question 7: correct answer is C
+if (document.getElementById("q7c").checked)
+{
+    score = score + 1;
+}
+
+// Question 8: correct answer is D
+if (document.getElementById("q8d").checked)
+{
+    score = score + 1;
+}
+
+// Question 9: correct answer is A
+if (document.getElementById("q9a").checked)
+{
+    score = score + 1;
+}
+
+// Question 10: correct answer is B
+if (document.getElementById("q10b").checked)
+{
+    score = score + 1;
+}
+
+//Ans Key: Q1=A, Q2=B, Q3=C, Q4=D, Q5=A, Q6=B, Q7=C, Q8=D, Q9=A, Q10=B 
+
+// Compute percentage
+var percentage = (score / 10) * 100;
+
+// Determine Remarks using if/else
+var remarks = "";
+
+if (percentage >= 75)
+{
+    remarks = "PASSED";
+}
+else
+{
+    remarks = "FAILED";
+}
+
+// Display the result at the end of the form
+document.getElementById("result").innerHTML =
+    "<div style='background-color:white; color:#216894; padding:20px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);'>" +
+    "<h2>RESULT</h2>" +
+    "Student Name: " + studentName + "<br>" +
+    "Score: " + score + "/10<br>" +
+    "Percentage: " + percentage + "%<br>" +
+    "Remarks: " + remarks +
+    "</div>";
+
+// Stop the form from reloading the page
+return false;
+
+}
+
+</script>
+
+</body>
+
+</html>
